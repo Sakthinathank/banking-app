@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa; /* Light background color */
+    height: 100%;
+}
+
+/* Login Page Container */
+.login-page {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Section Styles */
+.left-section {
+    flex: 1;
+    background-color: #E4FCFE; /* Light blue background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem; /* Increased padding for more space */
+    text-align: left;
+
+}
+
+.left-section .logo {
+    max-width: 180px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 3rem; /* More space between logo and text */
+}
+
+.logo{
+    position: absolute;
+    width: 100px;
+    z-index: 100;
+    top: 15px;
+    left: 25px;
+}
+
+.welcome-text {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 4rem;
+    color: #2c3e50;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #e67e22; /* Orange highlight for the text */
+}
+
+/* Right Section Styles */
+.right-section {
+    flex: 1;
+    background-color: #E4FCFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-background{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    width: 25%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Login Form Styles */
+.login-form {
+    background-color: #fff;
+    padding: 3rem; /* More padding for a better card feel */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+}
+
+.login-form h2 {
+    margin-bottom: 2rem;
+    color: #088BAA;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #088BAA; /* Blue button color */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #06758e; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+    }
+
+    .left-section {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .right-section {
+        padding: 1rem;
+    }
+
+    .welcome-text {
+        font-size: 2rem;
+    }
+}
